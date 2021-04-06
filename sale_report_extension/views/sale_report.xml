@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="sale_report_inherit" model="ir.ui.view">
+    <field name="model">sale.report</field>
+    <field name="inherit_id" ref="sale.view_order_product_pivot"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='confirmation_date']" position="after">
+        <field name="industry_id" type="row"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>
